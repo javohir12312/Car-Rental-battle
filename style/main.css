@@ -985,6 +985,231 @@ img {
   color: var(--instagram-bgc);
 }
 
+.service {
+  margin-bottom: 160px;
+}
+
+.service__text-box {
+  width: 100%;
+  max-width: 684px;
+  margin: 0 auto 40px;
+}
+
+.service__title {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: var(--text);
+}
+
+.service__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gray-title);
+}
+
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.service__list:nth-last-child(1) {
+  margin-top: 20px;
+}
+
+.service__item {
+  position: relative;
+  width: 100%;
+  max-width: 590px;
+  padding: 40px 32px;
+  background-color: var(--card-bgc);
+  border-radius: 20px;
+}
+
+.service__desc-box {
+  width: 100%;
+  max-width: 354px;
+}
+
+.service__icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: var(--btn);
+}
+
+.service__subject {
+  margin: 0 0 10px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: var(--text);
+}
+
+.service__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-title);
+}
+
+.service__item:hover {
+  background-color: var(--btn);
+}
+.service__item:hover .service__icon,
+.service__item:hover .service__subject,
+.service__item:hover .service__desc {
+  color: var(--btn-text);
+}
+
+@media only screen and (max-width: 720px) {
+  .service__list {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.safe {
+  margin-bottom: 160px;
+}
+
+.safe__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 0 32px;
+  background-color: var(--bgc);
+  border: 1.5px solid var(--border-color);
+  border-radius: 20px;
+}
+
+.safe__left {
+  padding-bottom: 32px;
+}
+
+.safe__text-box {
+  width: 100%;
+  max-width: 590px;
+  margin-bottom: 94px;
+}
+
+.safe__title {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--text);
+}
+
+.safe__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-title);
+}
+
+.safe__list {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.safe__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 200px;
+  height: 160px;
+  padding: 15px;
+  background-color: var(--card-bgc);
+  border-radius: 16px;
+}
+
+.safe__icon {
+  display: block;
+  margin-left: auto;
+  color: var(--text);
+}
+
+.safe__desc {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text);
+}
+
+.safe__item:hover {
+  background-color: var(--btn);
+}
+.safe__item:hover .safe__desc {
+  color: var(--text);
+}
+.safe__item:hover .safe__icon {
+  color: var(--text);
+}
+
+.safe__right {
+  margin-top: auto;
+}
+
+.safe__image {
+  width: 386px;
+  height: 472px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .safe__box {
+    padding: 30px 10px 0 24px;
+  }
+  .safe__text-box {
+    max-width: 466px;
+    margin-bottom: 35px;
+  }
+  .safe__item {
+    max-width: 140px;
+  }
+  .safe__image {
+    width: 284px;
+    height: 367px;
+  }
+}
+@media only screen and (max-width: 728px) {
+  .safe__box {
+    width: 100%;
+    max-width: 100%;
+    background-image: url("../../assets/imges/safe/human-background-ellepis.png");
+    background-repeat: no-repeat;
+    background-size: 160px;
+    background-position: right -70px top -70px;
+  }
+  .safe__left,
+.safe__text-box {
+    width: 100%;
+    max-width: 100%;
+  }
+  .safe__list {
+    flex-direction: column;
+  }
+  .safe__item {
+    max-width: 100%;
+    height: 128px;
+  }
+  .safe__right {
+    display: none;
+  }
+}
 .footer {
   padding: 40px 0;
   background-color: var(--bgc);
