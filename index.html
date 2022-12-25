@@ -1,150 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
     <title>Car Rental</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar__brand">
+            <a href="">
+              <img
+                src="./assets/imges/header/brand-logo.svg"
+                alt="brand-logo"
+              />
+            </a>
+          </div>
+          <div class="navbar__links">
+            <ul class="navbar__link-list">
+              <li class="navbar__link-list-item">
+                <a href="" class="navbar__link-list-links">Categories</a>
+              </li>
+              <li class="navbar-link-list-item">
+                <a href="" class="navbar__link-list-links">About Us</a>
+              </li>
+              <li class="navbar-link-list-item">
+                <a href="" class="navbar__link-list-links">Help center</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar__login">
+            <a href="" class="navbar__login-contact"> +1 855 420 0000 </a>
+            <div class="navbar-dark-mode">
+              <img
+                src="./assets/imges/header/dark-mode-image.svg"
+                alt="dark-mode-image"
+              />
+            </div>
+            <button class="navbar__login-btn">
+              Login
+              <img
+                src="./assets/imges/header/login-image.svg"
+                alt="login-image"
+              />
+            </button>
+          </div>
+          <div class="hamburger-menu">
+            <span class="hamburger-menu-line"></span>
+            <span class="hamburger-menu-line"></span>
+            <span class="hamburger-menu-line"></span>
+          </div>
         </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu__header">
+            <div class="brand-logo">
+              <a href="">
+                <img
+                  src="./assets/imges/header/brand-logo.svg"
+                  alt="brand-logo"
+                />
+              </a>
+            </div>
+            <div class="mobile-menu__close">
+              <img
+                src="./assets/imges/header/close-image.svg"
+                alt="close-image"
+              />
+            </div>
+          </div>
+          <div class="mobile-menu__body">
+            <p class="mobile-menu__title">Categories</p>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__list-item">
+                <a href="" class="mobile-menu__list-link-active">About Us</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="" class="mobile-menu-list-link">News</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="" class="mobile-menu-list-link">Careers</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="" class="mobile-menu__list-link">Locations</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__help">
+              <li>
+                <a href="" class="mobile-menu__help-link-active">Help center</a>
+              </li>
+              <li><a href="" class="mobile-menu__help-link">FAQ</a></li>
+              <li><a href="" class="mobile-menu__help-link">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="wrapper">
+            <div class="mobile-menu__footer">
+              <div class="mobile-menu__footer-login">
+                <a href="" class="mobile-menu__footer-login-contact">
+                  +1 855 420 0000
+                </a>
+                <div class="mobile-menu__footer-dark-mode">
+                  <img
+                    src="./assets/imges/header/dark-mode-image.svg"
+                    alt="dark-mode-image"
+                  />
+                </div>
+                <button class="mobile-menu__footer-login-btn">
+                  Login
+                  <img
+                    src="./assets/imges/header/login-image.svg"
+                    alt="login-image"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero__wrapper">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="hero__text">
-                                    <h2>Compact cars</h2>
-                                    <p>Rent cars as you are comfortable and where you are comfortable.</p>
-                                </div>
-                                <img src="./assets/imges/hero/car1.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="hero__text">
-                                    <h2>Sports cars</h2>
-                                    <p>Rent cars as you are comfortable and where you are comfortable.</p>
-                                </div>
-                                <img src="./assets/imges/hero/car2.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="hero__text">
-                                    <h2>Vans </h2>
-                                    <p>Rent cars as you are comfortable and where you are comfortable.</p>
-                                </div>
-                                <img src="./assets/imges/hero/car3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="hero__btn">
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-
-                    </div>
-                    <div class="hero__input">
-                        <input type="text" name="" id="" placeholder="Find the car of your dreams">
-                        <img src="./assets/imges/hero/search.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="choose">
-            <div class="container">
-                <div class="choose__heading">
-                    <h2>
-                        Choose the car of your dreams
-                    </h2>
-
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__text">
+                    <h2>Compact cars</h2>
                     <p>
-                        We provide our customers with the most incredible driving emotions. That is why there are only
-                        world-class cars in our fleet
+                      Rent cars as you are comfortable and where you are
+                      comfortable.
                     </p>
+                  </div>
+                  <img src="./assets/imges/hero/car1.png" alt="" />
                 </div>
-
-                <div class="choose__btn">
-                    <button class="choose__compact">
-                        Compact
-                    </button>
-
-                    <button class="choose__sport">
-                        Sports cars
-                    </button>
-
-                    <button class="choose__vans">
-                        Vans
-                    </button>
-
-                    <div>
-                        <ul>
-                            <li>Compact</li>
-                            <li>Sport Cars</li>
-                            <li></li>
-                        </ul>
-                    </div>
+                <div class="swiper-slide">
+                  <div class="hero__text">
+                    <h2>Sports cars</h2>
+                    <p>
+                      Rent cars as you are comfortable and where you are
+                      comfortable.
+                    </p>
+                  </div>
+                  <img src="./assets/imges/hero/car2.png" alt="" />
                 </div>
+                <div class="swiper-slide">
+                  <div class="hero__text">
+                    <h2>Vans</h2>
+                    <p>
+                      Rent cars as you are comfortable and where you are
+                      comfortable.
+                    </p>
+                  </div>
+                  <img src="./assets/imges/hero/car3.png" alt="" />
+                </div>
+              </div>
+              <div class="hero__btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
             </div>
-        </section>
-
-        <section class="instagram">
-            <div class="container">
-
+            <div class="hero__input">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Find the car of your dreams"
+              />
+              <img src="./assets/imges/hero/search.svg" alt="" />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="partners">
-            <div class="container">
+      <section class="choose">
+        <div class="container">
+          <div class="choose__heading">
+            <h2>Choose the car of your dreams</h2>
 
+            <p>
+              We provide our customers with the most incredible driving
+              emotions. That is why there are only world-class cars in our fleet
+            </p>
+          </div>
+
+          <div class="choose__btn">
+            <button class="choose__compact">Compact</button>
+
+            <button class="choose__sport">Sports cars</button>
+
+            <button class="choose__vans">Vans</button>
+
+            <div>
+              <ul>
+                <li>Compact</li>
+                <li>Sport Cars</li>
+                <li></li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="service">
-            <div class="container">
+      <section class="instagram">
+        <div class="container"></div>
+      </section>
 
-            </div>
-        </section>
+      <section class="partners">
+        <div class="container"></div>
+      </section>
 
-        <section class="safe">
-            <div class="container">
+      <section class="service">
+        <div class="container"></div>
+      </section>
 
-            </div>
-        </section>
+      <section class="safe">
+        <div class="container"></div>
+      </section>
 
-
-        <section class="modal">
-
-        </section>
+      <section class="modal"></section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-
-        </div>
+      <div class="container"></div>
     </footer>
-
 
     <script src="/main-js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>
