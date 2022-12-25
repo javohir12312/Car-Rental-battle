@@ -344,7 +344,6 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   height: 100%;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -436,8 +435,18 @@ img {
   padding-bottom: 27px;
   align-items: center;
 }
+.navbar__dark-mode {
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.navbar__dark-mode:hover > svg {
+  fill: black;
+}
+.navbar__dark-mode:active > svg {
+  fill: white;
+}
 .navbar__link-list {
-  max-width: 414px;
+  max-width: 450px;
   display: flex;
   -moz-column-gap: 32px;
        column-gap: 32px;
@@ -446,6 +455,7 @@ img {
 }
 .navbar__link-list-links {
   display: block;
+  margin-right: 9px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -454,6 +464,34 @@ img {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+.navbar__link-list-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.navbar__link-list-item-active1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.navbar__link-list-item-active1:hover .navbar__dropdown-menu1 {
+  position: absolute;
+  display: block;
+}
+.navbar__link-list-item-active1:hover .navbar__dropdown-arrow {
+  transform: rotate(180deg);
+}
+.navbar__link-list-item-active2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.navbar__link-list-item-active2:hover .navbar__dropdown-menu2 {
+  display: block;
+}
+.navbar__link-list-item-active2:hover .navbar__dropdown-arrow {
+  transform: rotate(180deg);
 }
 .navbar__login {
   max-width: 388px;
@@ -493,6 +531,73 @@ img {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+  cursor: pointer;
+}
+.navbar__login-btn:hover {
+  background-color: #077743;
+}
+.navbar__login-btn:active {
+  background: #f5f5f5;
+}
+.navbar__dropdown-menu1 {
+  width: 207px;
+  display: none;
+  top: 25px;
+  left: -18px;
+  padding: 28px 25px;
+  position: absolute;
+  height: 267px;
+  z-index: 120;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.navbar__dropdown-menu2 {
+  display: none;
+  width: 207px;
+  position: absolute;
+  top: 25px;
+  left: -18px;
+  height: 267px;
+  padding: 20px 25px;
+  z-index: 120;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.navbar__dropdown-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 0;
+}
+.navbar__dropdown-menu-list-item {
+  display: flex;
+  align-items: center;
+  width: 169px;
+  height: 58px;
+  border-radius: 100px;
+}
+.navbar__dropdown-menu-list-item:hover {
+  background: #f5f5f5;
+  border-radius: 100px;
+}
+.navbar__dropdown-menu-list-item:active {
+  background: #299764;
+}
+.navbar__dropdown-menu-list-item:active .navbar__dropdown-menu-list-link {
+  color: #fff;
+}
+.navbar__dropdown-menu-list-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 16px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .hamburger-menu {
@@ -511,7 +616,7 @@ img {
 .mobile-menu {
   max-width: 475px;
   position: absolute;
-  right: -100%;
+  display: none;
   background: #6b6868;
   padding: 33px 24px 0px 30px;
 }
@@ -664,6 +769,8 @@ img {
   .mobile-menu {
     display: none;
     height: 100vh;
+    z-index: 100;
+    background-color: #ffffff;
     position: absolute;
     top: 0;
     right: 0;
@@ -987,6 +1094,39 @@ img {
   color: var(--instagram-bgc);
 }
 
+.brands {
+  margin-bottom: 160px;
+}
+.brands-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.brands__logos {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+}
+.brands__logos-image {
+  display: block;
+  width: 160px;
+}
+
+@media (max-width: 978px) {
+  .brands {
+    overflow: hidden;
+  }
+  .brands-logo-block {
+    overflow-x: scroll;
+  }
+  .brands__logos {
+    width: 1200px;
+    overflow: scroll;
+  }
+}
 .footer {
   padding: 40px 0;
   background-color: var(--bgc);
