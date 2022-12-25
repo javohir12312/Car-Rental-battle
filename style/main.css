@@ -401,6 +401,247 @@ img {
   width: 1px;
 }
 
+.navbar {
+  display: flex;
+  padding-top: 27px;
+  align-items: center;
+}
+.navbar__link-list {
+  max-width: 414px;
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbar__link-list-links {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+.navbar__login {
+  max-width: 388px;
+  display: flex;
+  margin-left: auto;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  align-items: center;
+}
+.navbar__login-contact {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+}
+.navbar__dark-mode {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+.navbar__login-btn {
+  display: block;
+  border: none;
+  border-radius: 100px;
+  padding: 18px 22px 18px 30px;
+  background-color: #299764;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.hamburger-menu {
+  width: 40px;
+  display: none;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.hamburger-menu-line {
+  width: 100%;
+  display: block;
+  border: 2px solid #000000;
+  background-color: #000000;
+}
+
+.mobile-menu {
+  max-width: 475px;
+  position: absolute;
+  right: -475px;
+  background: #6b6868;
+  padding: 33px 24px 0px 30px;
+}
+.mobile-menu__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+}
+.mobile-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-menu__close {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 100px;
+}
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  list-style: none;
+  padding: 0;
+}
+.mobile-menu__list-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  color: #555555;
+  text-decoration: none;
+}
+.mobile-menu__list-link-active {
+  font-family: "Montserrat";
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  color: #000000;
+  text-decoration: none;
+}
+.mobile-menu__help {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  list-style: none;
+  padding: 0;
+}
+.mobile-menu__help-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: #555555;
+  text-decoration: none;
+}
+.mobile-menu__help-link-active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  color: #000000;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: flex-end;
+  max-height: 515px;
+}
+
+.mobile-menu__footer-login {
+  display: flex;
+  max-width: 415px;
+  align-items: center;
+}
+.mobile-menu__footer-login-contact {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 15px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+}
+.mobile-menu__footer-login-btn {
+  padding: 18px 18px 18px 30px;
+  background: #299764;
+  border-radius: 100px;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.mobile-menu__footer-dark-mode {
+  display: flex;
+  margin-left: auto;
+  margin-right: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #f5f5f5;
+  border-radius: 100px;
+}
+
+@media (max-width: 1003px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__link-list {
+    display: none;
+  }
+  .navbar__login {
+    display: none;
+  }
+  .hamburger-menu {
+    width: 40px;
+    display: flex;
+    row-gap: 10px;
+  }
+  .hamburger-menu-line {
+    width: 100%;
+    display: block;
+    border: 2px solid #000000;
+    background-color: #000000;
+  }
+  .mobile-menu {
+    display: none;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .mobile-menu__footer-login {
+    margin-top: auto;
+  }
+}
 .swiper {
   width: 100%;
   position: relative;
