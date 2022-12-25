@@ -344,6 +344,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   height: 100%;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -432,6 +433,7 @@ img {
 .navbar {
   display: flex;
   padding-top: 27px;
+  padding-bottom: 27px;
   align-items: center;
 }
 .navbar__link-list {
@@ -509,7 +511,7 @@ img {
 .mobile-menu {
   max-width: 475px;
   position: absolute;
-  right: -475px;
+  right: -100%;
   background: #6b6868;
   padding: 33px 24px 0px 30px;
 }
