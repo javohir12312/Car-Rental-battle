@@ -1,15 +1,4 @@
 {
-<<<<<<< HEAD
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/style",
-        }
-    ],
-    "liveServer.settings.port": 5501
-}
-=======
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
@@ -18,4 +7,3 @@
     }
   ]
 }
->>>>>>> d497115afbe99a3e5c58262e55fae377e43a2feb
