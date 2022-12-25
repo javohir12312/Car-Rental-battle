@@ -14,7 +14,7 @@
     }
   }
   &__link-list {
-    max-width: 450px;
+    max-width: 510px;
     display: flex;
     column-gap: 32px;
     justify-content: space-between;
@@ -28,7 +28,7 @@
       font-size: 18px;
       line-height: 22px;
       text-align: center;
-      color: #000000;
+      color: var(--text);
       text-decoration: none;
     }
     &-item {
@@ -37,6 +37,8 @@
       align-items: center;
       &-active1 {
         display: flex;
+        padding: 18px 16px;
+        border-radius: 100px;
         position: relative;
         align-items: center;
         &:hover .navbar__dropdown-menu1 {
@@ -46,16 +48,24 @@
         &:hover .navbar__dropdown-arrow {
           transform: rotate(180deg);
         }
+        &:hover {
+          background: #f5f5f5;
+        }
       }
       &-active2 {
         display: flex;
         position: relative;
+        padding: 18px 16px;
+        border-radius: 100px;
         align-items: center;
         &:hover .navbar__dropdown-menu2 {
           display: block;
         }
         &:hover .navbar__dropdown-arrow {
           transform: rotate(180deg);
+        }
+        &:hover {
+          background: #f5f5f5;
         }
       }
     }
@@ -72,7 +82,7 @@
       font-weight: 600;
       font-size: 18px;
       line-height: 22px;
-      color: #000000;
+      color: var(--text);
       text-decoration: none;
     }
   }
@@ -83,7 +93,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #f5f5f5;
+    background-color: var(--card-bgc);
   }
   &__login-btn {
     display: block;
@@ -108,7 +118,7 @@
   &__dropdown-menu1 {
     width: 207px;
     display: none;
-    top: 25px;
+    top: 65px;
     left: -18px;
     padding: 28px 25px;
     position: absolute;
@@ -122,7 +132,7 @@
     display: none;
     width: 207px;
     position: absolute;
-    top: 25px;
+    top: 65px;
     left: -18px;
     height: 267px;
     padding: 20px 25px;
@@ -144,13 +154,13 @@
       height: 58px;
       border-radius: 100px;
       &:hover {
-        background: #f5f5f5;
+        background: var(--card-bgc);
         border-radius: 100px;
       }
       &:active {
         background: #299764;
       }
-      &:active .navbar__dropdown-menu-list-link{
+      &:active .navbar__dropdown-menu-list-link {
         color: #fff;
       }
     }
@@ -309,7 +319,7 @@
     border-radius: 100px;
   }
 }
-@media (max-width: 1003px) {
+@media (max-width: 1113px) {
   .navbar {
     display: flex;
     justify-content: space-between;

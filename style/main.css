@@ -347,6 +347,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: var(--body-bgc);
 }
 
 main {
@@ -368,7 +369,133 @@ img {
   padding: 0 20px;
 }
 
+.modal__login {
+  max-width: 590px;
+  position: absolute;
+  z-index: 150;
+  left: 50%;
+  top: -50%;
+  transition: 0.6s all ease;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.modal__login-block {
+  max-width: 534px;
+  width: 100%;
+  margin: 24px auto;
+}
+.modal__login-close {
+  display: block;
+  max-width: 58px;
+  height: 58px;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  width: 100%;
+  background: #f5f5f5;
+  border-radius: 100px;
+}
+.modal__login-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+.modal__login-subtitle {
+  margin-bottom: 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #555555;
+}
+.modal__login-form {
+  display: flex;
+  row-gap: 16px;
+  position: relative;
+  flex-direction: column;
+}
+.modal__login-form-input {
+  background: #ffffff;
+  border: 2px solid #299764;
+  border-radius: 82px;
+  padding: 18px 0px 18px 30px;
+}
+.modal__login-form-input:focus {
+  outline: none;
+}
+.modal__login-form-btn {
+  display: inline;
+  position: absolute;
+  background: none;
+  height: 100%;
+  align-items: center;
+  border: none;
+  right: 23px;
+  top: 35px;
+}
+.modal__login-wrong-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.modal__login-wrong-block-1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ff3b30;
+}
+.modal__login-wrong-block-forget {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 17px;
+  text-align: right;
+  color: #555555;
+}
+.modal__login-register {
+  display: block;
+  margin-bottom: 32px;
+  margin-top: 26px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+.modal__login-btn-block-btn {
+  width: 100%;
+  display: block;
+  padding: 18px 0px;
+  background: #299764;
+  border-radius: 100px;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
 :root {
+  --body-bgc: #fff;
   --text: #000000;
   --btn: #299764;
   --btn-hover: #299764cc;
@@ -393,7 +520,8 @@ img {
   --border-color: #e5e7ea;
 }
 
-.site-body--white {
+.dark {
+  --body-bgc: #1C1C1C;
   --text: #fff;
   --btn: #299764;
   --btn-hover: #299764cc;
@@ -446,7 +574,7 @@ img {
   fill: white;
 }
 .navbar__link-list {
-  max-width: 450px;
+  max-width: 510px;
   display: flex;
   -moz-column-gap: 32px;
        column-gap: 32px;
@@ -462,7 +590,7 @@ img {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #000000;
+  color: var(--text);
   text-decoration: none;
 }
 .navbar__link-list-item {
@@ -472,6 +600,8 @@ img {
 }
 .navbar__link-list-item-active1 {
   display: flex;
+  padding: 18px 16px;
+  border-radius: 100px;
   position: relative;
   align-items: center;
 }
@@ -482,9 +612,14 @@ img {
 .navbar__link-list-item-active1:hover .navbar__dropdown-arrow {
   transform: rotate(180deg);
 }
+.navbar__link-list-item-active1:hover {
+  background: #f5f5f5;
+}
 .navbar__link-list-item-active2 {
   display: flex;
   position: relative;
+  padding: 18px 16px;
+  border-radius: 100px;
   align-items: center;
 }
 .navbar__link-list-item-active2:hover .navbar__dropdown-menu2 {
@@ -492,6 +627,9 @@ img {
 }
 .navbar__link-list-item-active2:hover .navbar__dropdown-arrow {
   transform: rotate(180deg);
+}
+.navbar__link-list-item-active2:hover {
+  background: #f5f5f5;
 }
 .navbar__login {
   max-width: 388px;
@@ -507,7 +645,7 @@ img {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
+  color: var(--text);
   text-decoration: none;
 }
 .navbar__dark-mode {
@@ -517,7 +655,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #f5f5f5;
+  background-color: var(--card-bgc);
 }
 .navbar__login-btn {
   display: block;
@@ -542,7 +680,7 @@ img {
 .navbar__dropdown-menu1 {
   width: 207px;
   display: none;
-  top: 25px;
+  top: 65px;
   left: -18px;
   padding: 28px 25px;
   position: absolute;
@@ -556,7 +694,7 @@ img {
   display: none;
   width: 207px;
   position: absolute;
-  top: 25px;
+  top: 65px;
   left: -18px;
   height: 267px;
   padding: 20px 25px;
@@ -580,7 +718,7 @@ img {
   border-radius: 100px;
 }
 .navbar__dropdown-menu-list-item:hover {
-  background: #f5f5f5;
+  background: var(--card-bgc);
   border-radius: 100px;
 }
 .navbar__dropdown-menu-list-item:active {
@@ -744,7 +882,7 @@ img {
   border-radius: 100px;
 }
 
-@media (max-width: 1003px) {
+@media (max-width: 1113px) {
   .navbar {
     display: flex;
     justify-content: space-between;
